@@ -1,0 +1,1 @@
+SELECT * FROM employee_db WHERE year(hire_date) = 1986
