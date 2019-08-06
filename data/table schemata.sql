@@ -1,4 +1,4 @@
--- Create Table: public.department_db
+-- Create Table: department_db
 
 CREATE TABLE department_db
 (
@@ -38,7 +38,7 @@ CREATE TABLE employee_db
 CREATE TABLE manager
 (
     dept_no character varying(10),
-    emp_no integer NOT NULL,
+    emp_no character varying(10) NOT NULL,
     from_date character varying(20),
     to_date character varying(20),
 )
@@ -48,7 +48,7 @@ CREATE TABLE manager
 
 CREATE TABLE salaries
 (
-    emp_no integer NOT NULL,
+    emp_no character varying(10) NOT NULL,
     salary integer NOT NULL,
     from_date character varying NOT NULL,
     to_date character varying NOT NULL
